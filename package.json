@@ -1,14 +1,15 @@
 {
-  "name": "temp3",
+  "name": "@olchyk98/walker",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
+  "description": "My way to create scalable programs",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "esbuild index.ts --platform=node --bundle --outfile=dist/index.js && node dist/index.js"
+    "build": "esbuild index.ts --platform=node --bundle --outfile=dist/index.js",
+    "dev": "yarn build && node dist/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Oles Odynets",
   "license": "ISC",
   "dependencies": {
     "@types/fs-extra": "^9.0.11",
@@ -21,5 +22,14 @@
     "fs-extra": "8.1",
     "ramda": "^0.27.1",
     "typescript": "^4.2.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olchyk98/walker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/olchyk98/walker/issues"
+  },
+  "homepage": "https://github.com/olchyk98/walker#readme"
 }
