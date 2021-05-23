@@ -1,0 +1,25 @@
+{
+  "name": "temp3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "esbuild index.ts --platform=node --bundle --outfile=dist/index.js && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/fs-extra": "^9.0.11",
+    "@types/node": "^15.6.0",
+    "@types/ramda": "^0.27.40",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "esbuild": "^0.12.1",
+    "eslint": "^7.27.0",
+    "fs-extra": "8.1",
+    "ramda": "^0.27.1",
+    "typescript": "^4.2.4"
+  }
+}
