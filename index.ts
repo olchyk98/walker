@@ -4,6 +4,7 @@ import {
   filter,
   flatten,
   includes,
+  isEmpty,
   map,
 } from 'ramda'
 import path from 'path'
@@ -14,7 +15,8 @@ const isFilteredFile = curry((filters: string[], file: string): boolean => {
 })
 
 function filterFiles (files: string[], filters: string[]) {
-    return filter(isFilteredFile(filters), files)
+  if(isEmpty(filters)) return files
+  return filter(isFilteredFile(filters), files)
 }
 
 async function getFiles (dirPath: string): Promise<string[]> {
